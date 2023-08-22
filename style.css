@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+} 
+form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 5rem;
+}
+#input_search{
+     width:60%;
+     max-width: 400px;
+     padding: 15px ;
+     border: none;
+     box-shadow:0 7px 9px;
+     border-radius: 5px;
+     font-size: 18px;
+}
+#search_btn{
+    padding: 10px;
+    background-color: rgb(127, 22, 122);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: 0 7px 9px black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+
+
+}
+.search_pic{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.output_result{
+    margin-bottom: 60px;
+    width:30%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px;
+    overflow: hidden;
+}
+.output_result img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.output_result img:hover{
+    opacity: 0.8;
+}
+.output_result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#ShowMore_Button{
+    background-color: rgb(107, 28, 107);
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-left: 50rem;
+    display: block;
+    /* margin: 2rem; */
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+@media  screen and (max-width:768px){
+    .search_pic{
+        padding: 20px;
+    }
+    h1{
+        font-size: 30px;
+    
+    }
+    #search_btn{
+        padding: 5px;
+    }
+    .output_result{
+        width: 45%;
+    }   
+    #input_search{
+        width:60%;
+   }
+}
+@media  screen and (max-width:480px){
+    .search_pic{
+        padding: 20px;
+    }
+    .output_result{
+        width: 100%;
+    }   
+}
